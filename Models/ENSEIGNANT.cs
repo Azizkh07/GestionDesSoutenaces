@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GestionDesSoutenaces.Models
+{
+    public class ENSEIGNANT
+    {
+        [Key]
+        public int ID { get; set; }
+
+        [Required(ErrorMessage = "Le champ Nom est obligatoire.")]
+        public string Nom { get; set; }
+
+        [Required(ErrorMessage = "Le champ Prénom est obligatoire.")]
+        public string Prenom { get; set; }
+
+    }
+}
